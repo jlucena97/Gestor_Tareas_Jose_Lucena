@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario_Jose_Lucena</title>
+	<link rel="stylesheet" type="text/css" href="css/formulario.css">
+</head>
+<body>
+	<form id="form">
+		<fieldset>
+			<h3>Formulario_Tarea</h3>
+		
+				<label for="title">Titulo Tarea</label>
+				<input type="text" name="title" title="Inserte su el titulo de la tarea" id="title" pattern="[A-z]*" placeholder="titulo" required>
+				
+				<label for="modulo">Modulo</label><br/>
+				<select>
+					<option value="1">Diseño Web</option>
+					<option value="2">Desarrollo Web en Entorno Cliente</option>
+					<option value="3">Desarrollo Web en Entorno Servidor</option>
+					<option value="4">Despliegue de Aplicaciones Web</option>
+					<option value="5">Android</option>
+				</select>
+
+				<label for="fecha">Fecha de entrega</label><br/>
+				<input type="date" name="fecha" title="Inserte la fecha" id="date" required>
+			
+				<label>Descripcion Tarea</label>
+				<textarea maxlength="250"></textarea>
+				<br/>
+				<br/>
+				<a href="#" onclick="enviar();" id="boton">Enviar</a>	
+				
+		</fieldset>
+	</form>
+	
+</body>
+<script type="text/javascript" src="js/agenda.js"></script>
+</html>

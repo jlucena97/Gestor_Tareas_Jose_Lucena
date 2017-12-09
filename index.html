@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Agenda_Jose_Lucena</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/agenda.css">
+</head>
+<body>
+	<header>
+		<div id="registro">
+			<img src="imagenes/senior.png" alt="usuario">
+			<h2>José Lucena</h2>
+		</div>
+		<div id="rrss">
+			<ul>
+				<li><a href="#"><img src="imagenes/twitter.png" alt="twitter"></a></li>
+				<li><a href="#"><img src="imagenes/facebook.png" alt="Facebook"></a></li>
+				<li><a href="#"><img src="imagenes/github.png" alt="Github"></a></li>
+				<li><a href="#"><img src="imagenes/likendin.png" alt="Linkedin"></a></li>
+			</ul>
+		</div>
+	</header>
+	<main>
+		<div id="buscador">
+			<input type="text" id="inputsearch" placeholder="Que buscas??" />
+  			<a href="#">Buscar</a>
+		</div>
+		<div id="agenda">
+			<section id="design">
+				<div class="des">
+					<h3>DISEÑO WEB</h3><a href="form.html"><img src="imagenes/anadir.png" alt="annadir"></a><img id="menu_1" src="imagenes/down.png">
+				</div>
+				<article class="tarea">
+					<h4>Tarea 1: Lo que sea</h4> 
+					<img src="imagenes/delete.png" alt="eliminar">
+					<img id="tarea_1" onclick="texto('1');" src="imagenes/abajo.png">
+					<div class="texto" id="texto_1">
+							<h4>Titulo</h4>
+							<hr>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+						</div>
+				</article>
+				<article class="tarea"><h4>Tarea 2: Lo que sea</h4> <img src="imagenes/delete.png" alt="eliminar"><img id="tarea_2" src="imagenes/abajo.png" onclick="texto('2');"></article>
+						
+				<article class="tarea"><h4>Tarea 3: Lo que sea</h4> <img src="imagenes/delete.png" alt="eliminar"><img id="tarea_3" src="imagenes/abajo.png" onclick="texto('3');"></article>
+
+			</section>
+			<section><div class="des"><h3>DESARROLLO WEB EN ENTORNO CLIENTE</h3><a href="form.html"><img src="imagenes/anadir.png" alt="annadir"></a><img src="imagenes/down.png" id="menu_2"></div></section>
+
+			<section><div class="des"><h3>DESARROLLO WEB EN ENTORNO SERVIDOR</h3><a href="form.html"><img src="imagenes/anadir.png" alt="annadir"></a><img src="imagenes/down.png"></div></section>
+
+			<section><div class="des"><h3>DESPLIEGUE DE APLICACIONES WEB</h3><a href="form.html"><img src="imagenes/anadir.png" alt="annadir"></a><img src="imagenes/down.png"></div></section>
+
+			<section><div class="des"><h3>ANDROID</h3><a href="form.html"><img src="imagenes/anadir.png" alt="annadir"></a><img src="imagenes/down.png"></div></section>
+		</div> 
+	</main>
+	<footer>
+		<ul>
+			<li><a href="#">Privacidad</a></li>
+			<li><a href="#">Contacto</a></li>
+			<li><a href="#">Archivos</a></li>
+			<li><a href="#">Sobre Nosotros</a></li>
+			<li><a href="agenda.html"><img src="imagenes/subir.png" alt="subir"></a></li>
+		</ul>
+	</footer>
+</body>
+<script type="text/javascript" src="js/agenda.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</html>

@@ -1,0 +1,240 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font: normal 'Arial', ans-serif;
+  background-image: url("../Imagenes/fondo.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/*header*/
+header{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  transition: all 1s;
+}
+header:hover{
+  opacity: 1;
+}
+header #registro{
+  display: grid;
+  grid-template-columns: 15% 85%;
+  height: 0.2rem;
+}
+header #registro img{ 
+  padding-left: 2.5rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  transition: all 2s;
+}
+header #registro img:hover{
+  height: 2.5rem;
+}
+header #registro h2{
+  color: white;
+  text-shadow: 1px 4px 5px white;
+  font-size: 1.7rem;
+  height: 1.7rem;
+  margin: 0;
+  padding: 0;
+}
+header #rrss ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4,auto);
+}
+header #rrss ul li{
+  text-align: center;
+}
+header #rrss ul li img{
+  width: 2rem;
+  height: 2rem;
+  transition: all 1.3s;
+}
+header #rrss ul li img:hover{
+  transform: rotate(360deg);
+}
+
+/*Buscador*/
+#buscador{
+  width: 70%;
+  margin: 0 auto;
+  padding: 25px;
+}
+#buscador input{
+  width: 90%;
+  height: 1.6rem;
+  background-color: white;
+  opacity: 0.6;
+  border: 1px solid #eee;
+  font: normal 10px 'Arial', ans-serif;
+  box-shadow: 3.5px 2.5px 6px grey;
+  letter-spacing: 5px;
+  text-align:center;
+  color: black;
+  font-size: 1.2rem;
+  border: 2px solid white;
+  border-radius: 0.3rem;
+  transition: all 2s;
+}
+#buscador input:hover{
+  opacity: 0.9;
+  border: 2px solid black;
+}
+#buscador a{
+  text-decoration: none;
+  letter-spacing: 3px;
+  border: 1px solid #eee;
+  background: white;
+  color:black;
+  padding: 0.35rem;
+  padding-bottom: 0.2rem;
+  border-radius: 0.3rem;
+  box-shadow: 3.5px 2.5px 2px grey;
+  transition: all 1s;
+}
+
+#buscador a:hover{
+border: 1px solid black;
+text-shadow: 0px 1px 2px grey;
+letter-spacing: 6px;
+border-radius: 0.2rem;
+box-shadow: 5px 3px 5px grey;
+}
+
+/*AGENDA*/
+main{
+  margin-top: 5rem;
+}
+#agenda{
+  width: 70%;
+  margin: 0 auto;
+}
+section div>h3{
+  padding: 0;
+  margin: 0;
+}
+section .des{
+  height: 1.5rem;
+  display: grid;
+  grid-template-columns: 75% 10% 10%;
+  background-color: white;
+  border: 3px solid #eee;
+  box-shadow: 4px 2px 3px black;
+  letter-spacing: 5px;
+  opacity: 0.8;
+  border-radius: 4px;
+  padding:5px;
+  transition: all 1s;
+}
+section .des:hover{
+  text-shadow: 2px 3px 3px grey;
+}
+/*Imagenes*/
+section .des img{
+  margin-left: 3.5rem;
+  padding-top: 0.2rem;
+  cursor: pointer;
+  height: 1.2rem;
+ transition: all 1s;
+}
+section .des #despleg{
+  width: 2rem;
+}
+section .des #anadir{
+  width: 1.2rem;
+  height: 1rem;
+}
+/*Agenda 2*/
+section .tarea{
+  padding: 2px;
+  background-color: white;
+  border: 3px solid #eee;
+  box-shadow: 2px 3px 5px grey;
+  letter-spacing: 5px;
+  padding: 2px;
+  opacity: 0.9;
+  display: none;
+  grid-template-columns: 1fr repeat(2,auto);
+}
+section .tarea>h4{
+  margin: 0;
+  padding: 0;
+  transition: all 2s;
+}
+section .tarea>h4:hover{
+  padding-left: 15rem;
+}
+
+section .tarea img{
+ margin-right: 1.6rem;
+ margin-left: 2.2rem;
+ cursor: pointer;
+ height: 1.2rem;
+ width: 1.5rem;
+ transition: all 1s;
+}
+article .texto{
+  display:none;
+  background-color: white;
+  border: 3px solid #eee;
+  box-shadow: 1px 1px 3px grey;
+}
+article .texto h4 {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+article .texto p{
+  margin: 0;
+  padding: 0.5rem;
+  letter-spacing: 1.5px;
+  text-decoration: underline;
+}
+
+/*Footer*/
+footer{
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  bottom:0;
+  position: absolute;
+  transition: all 1s;
+}
+footer:hover{
+  padding-bottom: 35px;
+  opacity: 1;
+}
+footer ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5,auto);
+}
+footer ul li{
+  text-align: center;
+}
+footer ul li a{
+  text-decoration: none;
+  color:white;
+  transition: all 1s;
+}
+footer ul li a:hover{
+  text-decoration: underline;
+}
+footer ul li img{
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  transition: all 1s;
+}
+footer ul li img:hover{
+  transform: rotate(360deg);
+}
+
